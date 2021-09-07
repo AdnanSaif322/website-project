@@ -29,7 +29,7 @@ module.exports.updatePostById = async function (req, res) {
 module.exports.deletePostById = async function (req, res) {
   const postId = req.params.id;
   
-  const post = await postService.updatePostById(postId);
+  const post = await postService.deletePostById(postId);
   return res.json(post);
 }
 
